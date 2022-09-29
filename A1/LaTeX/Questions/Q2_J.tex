@@ -1,0 +1,20 @@
+\SubProblem
+{ی}
+{
+    از رابطه استقلال دو متغیر تصادفی داریم: 
+    
+    \begin{equation*}
+        P(X,Y) = P(X).P(Y)
+    \end{equation*}
+    
+    با جایگذاری رابطه فوق در رابطه صورت سوال داریم:
+    \begin{equation*}
+    \begin{aligned}
+        I(X;Y) &= \sum_{x,y}^{}P(x,y)\log_2(\frac{P(x,y)}{P(x)P(y)})\\
+        &=\sum_{x,y}^{}P(x,y)\log_2(\frac{P(x).P(y)}{P(x).P(y)})\\
+        &=\sum_{x,y}^{}P(x,y)\log_2 1 = 0 [\frac{bit}{symbol}]
+    \end{aligned}
+    \end{equation*}
+    
+    رابطه بالا نیز صحت محاسبات قبلی را تایید می‌کند. به صورت کلی می‌توان گفت اگر دو متغیر تصادفی نسبت به هم مستقل باشند، اطلاعات متقابل آن‌ها صفر خواهد شد.
+}

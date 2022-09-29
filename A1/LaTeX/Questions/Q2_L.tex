@@ -1,0 +1,35 @@
+\SubProblem
+{ل}
+{
+\begin{equation*}
+\begin{aligned}
+    H(Y) &= -\sum_{y \in Y} P(y) \log_2 {P(y)}\\
+    &= \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 \\
+    &= \frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \frac{1}{2} = 2 [\frac{bits}{symbol}]
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+    H(X) &= -\sum_{x \in X} P(x) \log_2 {P(x)}\\
+    &= \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 \\
+    &= \frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \frac{1}{2} = 2 [\frac{bits}{symbol}]
+\end{aligned}
+\end{equation*}
+    
+\begin{equation*}
+\begin{aligned}
+    H(X,Y) &= -\sum_{x \in X}\sum_{y \in Y} P(x,y) \log_2 {P(x,y)}\\
+    &= 16(\frac{1}{16}\log_2 16) \\
+    &= 16 \times \frac{1}{4} = 4 [\frac{bits}{symbol}]
+\end{aligned}
+\end{equation*}
+
+    مقادیر 
+    \lr{$H(X)$}
+    و
+    \lr{H(X,Y)}
+    نسبت به قسمت (ج) بیشتر شده است اما مقدار
+    \lr{$H(Y)$}
+    تغییری نکرده است.
+}

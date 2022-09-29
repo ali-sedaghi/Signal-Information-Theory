@@ -1,0 +1,25 @@
+\SubProblem
+{الف}
+{
+\begin{equation*}
+\begin{aligned}
+    H(Y|X) &= -\sum_{x \in X}\sum_{y \in Y} P(x,y) \log_2 {P(y|x)} \\
+    &= \frac{1}{8}\log_2 4 + \frac{1}{16}\log_2 4 + \frac{1}{32}\log_2 4 + \frac{1}{32}\log_2 4 + \frac{1}{16}\log_2 8 \\
+    &+ \frac{1}{8}\log_2 2 + \frac{1}{32}\log_2 4 + \frac{1}{32}\log_2 4 + \frac{1}{4}\log_2 2 + 0 + 0 + 0 \\
+    &= \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \frac{1}{16} + \frac{3}{16} + \frac{1}{8} + \frac{1}{16} + \frac{1}{16} + \frac{3}{16} + \frac{1}{8} + \frac{1}{16} + \frac{1}{16} + \frac{1}{4} \\
+    &= \frac{13}{8} [\frac{bits}{symbol}]
+\end{aligned}
+\end{equation*}
+\\
+\begin{equation*}
+\begin{aligned}
+    H(X|Y) &= -\sum_{x \in X}\sum_{y \in Y} P(x,y) \log_2 {P(x|y)} \\
+    &= \frac{1}{8}\log_2 2 + \frac{1}{16}\log_2 4 + \frac{1}{32}\log_2 8 + \frac{1}{32}\log_2 8 + \frac{1}{16}\log_2 4 \\
+    &+ \frac{1}{8}\log_2 2 + \frac{1}{32}\log_2 8 + \frac{1}{32}\log_2 8 + \frac{1}{16}\log_2 4 + \frac{1}{16}\log_2 4 \\
+    &+ \frac{1}{16}\log_2 4 + \frac{1}{16}\log_2 4 + \frac{1}{4}\log_2 1 + 0 + 0 + 0 \\
+    &= \frac{1}{8} + \frac{1}{8} + \frac{3}{32} + \frac{3}{32}
+    + \frac{1}{8} + \frac{1}{8} + \frac{3}{32} + \frac{3}{32} + \frac{1}{8} + \frac{1}{8} + \frac{1}{8} + \frac{1}{8} \\
+    &= \frac{11}{8} [\frac{bits}{symbol}]
+\end{aligned}
+\end{equation*}
+}

@@ -1,0 +1,34 @@
+\SubProblem
+{ط}
+{
+    \begin{equation*}
+    \begin{aligned}
+        I(X;Y) &= H(X) + H(Y) - H(X,Y)\\
+        H(X,Y) &= H(X) + H(Y) - I(X;Y)
+    \end{aligned}
+    \end{equation*}
+    
+    برای حل این سوال باید از مقادیر جدول قبلی استفاده کنیم.
+
+    \begin{equation*}
+    \begin{aligned}
+        H(X) &= -\sum_{x \in X} P(x) \log_2 {P(x)}\\
+        &= \frac{1}{2}\log_2 1 + \frac{1}{4}\log_2 4 + \frac{1}{8}\log_2 8 + \frac{1}{8}\log_2 8 \\
+        &= \frac{1}{2} + \frac{1}{2} + \frac{3}{8} + \frac{3}{8} = \frac{7}{4} [\frac{bit}{symbol}]
+    \end{aligned}
+    \end{equation*}
+    
+    \begin{equation*}
+    \begin{aligned}
+        H(Y) &= -\sum_{y \in Y} P(y) \log_2 {P(y)}\\
+        &= \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 \\
+        &= \frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \frac{1}{2} = 2 [\frac{bit}{symbol}]
+    \end{aligned}
+    \end{equation*}
+    
+    \begin{equation*}
+    \begin{aligned}
+        H(X,Y) &= H(X) + H(Y) - I(X;Y) = \frac{7}{4} + 2 - 0 = \frac{15}{4} [\frac{bit}{symbol}]
+    \end{aligned}
+    \end{equation*}
+}

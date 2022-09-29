@@ -1,0 +1,86 @@
+\SubProblem
+{ز}
+{
+    \begin{equation*}
+        C = \max_{p_X(x)} I(X;Y)
+    \end{equation*}
+    
+    \begin{equation*}
+        I(X;Y) = H(X) - H(X|Y)
+    \end{equation*}
+    
+    بیشینه کردن مقدار 
+    \lr{$I(X;Y)$}
+    نیازمند بیشینه کردن 
+    \lr{$آ(X)$}
+    و کمینه کردن 
+    \lr{$H(X|Y)$}
+    است.
+    
+    بیشینه کردن مقدار  
+    \lr{$H(X)$}
+    نیازمند این است که 
+    \lr{$P(X)$}
+    از توزیع یکنواخت پیروی کند.
+    
+    کمینه کردن مقدار  
+    \lr{$H(X|Y)$}
+    نیازمند این است که به شرط داشتن 
+    \lr{$Y$}
+    مقدار 
+    \lr{$X$}
+    به صورت قطعی مشخص شود.
+    
+    جدول احتمال توام (مشترک) را مطاابق نکات بالا تکمیل می‌کنیم.
+    
+    \begin{latin}
+    \begin{center}
+      \renewcommand{\arraystretch}{1.6}
+      \begin{tabular}{| c | c | c | c | c | c |}
+        \hline
+        $P(X,Y)$ & 1 & 2 & 3 & 4 & $P(Y)$ \\ \hline
+        1 & $\frac{1}{4}$ & 0 & 0 & 0 & $\frac{1}{4}$ \\ \hline
+        2 & 0 & $\frac{1}{4}$ & 0 & 0 & $\frac{1}{4}$ \\ \hline
+        3 & 0 & 0 & $\frac{1}{4}$ & 0 & $\frac{1}{4}$ \\ \hline
+        4 & 0 & 0 & 0 & $\frac{1}{4}$ & $\frac{1}{4}$ \\ \hline
+        $P(X)$ & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ & 1 \\
+        \hline
+      \end{tabular}
+    \end{center}
+    \end{latin}
+
+    \begin{latin}
+    \begin{center}
+      \renewcommand{\arraystretch}{1.6}
+      \begin{tabular}{| c | c | c | c | c |}
+        \hline
+        $P(Y|X)$ & 1 & 2 & 3 & 4 \\ \hline
+        1 & 1 & 0 & 0 & 0 \\ \hline
+        2 & 0 & 1 & 0 & 0 \\ \hline
+        3 & 0 & 0 & 1 & 0 \\ \hline
+        4 & 0 & 0 & 0 & 1 \\
+        \hline
+      \end{tabular}
+    \end{center}
+    \end{latin}
+    
+    \begin{equation*}
+    \begin{aligned}
+        H(X) &= -\sum_{x \in X} P(x) \log_2 {P(x)} \\
+        &= \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4 + \frac{1}{4}\log_2 4
+    = 2 [\frac{bits}{symbol}]
+    \end{aligned}
+    \end{equation*}
+    
+    \begin{equation*}
+    \begin{aligned}
+        H(Y|X) &= -\sum_{x \in X}-\sum_{y \in Y} P(x,y) \log_2 {P(x,y)} \\
+        &= \frac{1}{4}\log_2 1 + \frac{1}{4}\log_2 1 + \frac{1}{4}\log_2 1 + \frac{1}{4}\log_2 1
+    = 0 [\frac{bits}{symbol}]
+    \end{aligned}
+    \end{equation*}
+        
+    \begin{equation*}
+        I(X;Y) = H(X) - H(Y|X) = 2 - 0 = 2 [\frac{bits}{symbol}]
+    \end{equation*}
+}

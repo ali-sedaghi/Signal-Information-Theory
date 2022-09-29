@@ -1,0 +1,63 @@
+\Problem
+{سوال دوم}
+{
+ابتدا جدول را با به دست آوردن احتمالات حاشیه‌ای \lr{Marginal} کامل می‌کنیم.
+
+\begin{latin}
+\begin{center}
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    $Y/X$ & 1 & 2 & 3 & 4 & $P(Y)$ \\ \hline
+    1 & $\frac{1}{8}$ & $\frac{1}{16}$ & $\frac{1}{32}$ & $\frac{1}{32}$ & $\frac{1}{4}$ \\ \hline
+    2 & $\frac{1}{16}$ & $\frac{1}{8}$ & $\frac{1}{32}$ & $\frac{1}{32}$ & $\frac{1}{4}$ \\ \hline
+    3 & $\frac{1}{16}$ & $\frac{1}{16}$ & $\frac{1}{16}$ & $\frac{1}{16}$ & $\frac{1}{4}$ \\ \hline
+    4 & $\frac{1}{4}$ & 0 & 0 & 0 & $\frac{1}{4}$ \\ \hline
+    $P(X)$ & $\frac{1}{2}$ & $\frac{1}{4}$ & $\frac{1}{8}$ & $\frac{1}{8}$ & 1 \\
+    \hline
+  \end{tabular}
+\end{center}
+\end{latin}
+
+سپس احتمالات شرطی را به دست می‌آوریم.
+
+\begin{center}
+$P(Y|X) = \frac{P(X,Y)}{P(X)}$
+\end{center}
+
+\begin{latin}
+\begin{center}
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{| c | c | c | c | c |}
+    \hline
+    $P(Y|X)$ & 1 & 2 & 3 & 4 \\ \hline
+    1 & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ \\ \hline
+    2 & $\frac{1}{8}$ & $\frac{1}{2}$ & $\frac{1}{4}$ & $\frac{1}{4}$ \\ \hline
+    3 & $\frac{1}{8}$ & $\frac{1}{4}$ & $\frac{1}{2}$ & $\frac{1}{2}$ \\ \hline
+    4 & $\frac{1}{2}$ & 0 & 0 & 0 \\
+    \hline
+  \end{tabular}
+\end{center}
+\end{latin}
+
+\vspace{3cm}
+
+\begin{center}
+$P(X|Y) = \frac{P(X,Y)}{P(Y)}$
+\end{center}
+
+\begin{latin}
+\begin{center}
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{| c | c | c | c | c |}
+    \hline
+    $P(X|Y)$ & 1 & 2 & 3 & 4 \\ \hline
+    1 & $\frac{1}{2}$ & $\frac{1}{4}$ & $\frac{1}{8}$ & $\frac{1}{8}$ \\ \hline
+    2 & $\frac{1}{4}$ & $\frac{1}{2}$ & $\frac{1}{8}$ & $\frac{1}{8}$ \\ \hline
+    3 & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ \\ \hline
+    4 & 1 & 0 & 0 & 0 \\
+    \hline
+  \end{tabular}
+\end{center}
+\end{latin}
+}
